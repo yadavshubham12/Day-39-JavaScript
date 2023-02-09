@@ -1,0 +1,9 @@
+const doubleDigits = [];
+
+for (let i = 0; i <= 100; i++) {
+  const numString = i.toString();
+  if (numString.length === 2 && numString[0] === numString[1]) {
+    doubleDigits.push(i);
+  }
+}
+console.log(`The double digits in the range 0 to 100 are: [${doubleDigits}]`);
